@@ -176,7 +176,7 @@
   }
   @media (max-width:720px){ .families{ grid-template-columns:1fr; } .families .vs{ display:none;} }
   .family-card{ text-align:center; }
-  .family-card .role{ font-family:var(--label); font-size:0.62rem; letter-spacing:0.25em; color:var(--gold); }
+  .family-card .role{ font-family:var(--label); font-size:0.62rem; letter-spacing:0.25em; color:var(--gold); display: block; margin-bottom: 0.6rem; }
   .family-card .name{
     font-family:var(--serif-mr); font-weight:700; font-size:1.7rem; color:var(--maroon); margin:0.5rem 0 0.2rem;
   }
@@ -186,7 +186,6 @@
   .vs{
     align-self:center; font-family:var(--script); font-size:2.6rem; color:var(--gold); padding-top:1rem;
   }
-  .pot-icon{ width:34px; height:34px; margin:0 auto 0.6rem; opacity:0.75; }
 
   /* ---------- Countdown ---------- */
   .countdown-wrap{ text-align:center; }
@@ -284,10 +283,12 @@
 
   /* ---------- Footer ---------- */
   footer{
-    text-align:center; padding:4rem 6vw 3rem; border-top:1px solid var(--line);
+    text-align:center; padding:5rem 6vw 3rem; border-top:1px solid var(--line);
   }
-  footer .fam{ font-family:var(--serif-mr); font-size:1.05rem; color:var(--maroon); font-weight:600; margin-bottom:0.4rem;}
-  footer .hosts{ font-size:0.95rem; color:#6b4a36; line-height:1.9; max-width:520px; margin:0.6rem auto 0; }
+  footer .fam{ font-family:var(--serif-mr); font-size:1.2rem; color:var(--maroon); font-weight:600; margin-bottom:1.5rem;}
+  footer .hosts{ font-size:1.05rem; color:#6b4a36; line-height:1.75; max-width:520px; margin:0 auto; font-weight:500; }
+  footer .hosts span.family-highlight { color: var(--maroon); font-weight: 700; display: block; margin-top: 0.5rem; font-size: 1.15rem;}
+  footer .hashtag{ font-family:var(--serif-mr); font-size:2.8rem; font-weight:500; color:var(--maroon); margin-top:2.5rem; letter-spacing: 0.05em;}
   footer .credit{ margin-top:2.2rem; font-family:var(--label); font-size:0.56rem; letter-spacing:0.18em; color:#a88; opacity:0.55; }
 
   /* fade-up reveal */
@@ -347,7 +348,6 @@
   </div>
   <div class="families">
     <div class="family-card">
-      <svg class="pot-icon" viewBox="0 0 40 40"><path d="M12 16 h16 l-2 18 h-12 z" fill="none" stroke="#B8892F" stroke-width="1.4"/><ellipse cx="20" cy="16" rx="9" ry="2.4" fill="none" stroke="#B8892F" stroke-width="1.4"/><path d="M20 4 v10 M15 8 l5 6 5-6" fill="none" stroke="#7A1B2E" stroke-width="1.3"/></svg>
       <span class="role">वर · The Groom</span>
       <div class="name">मोहित दुसाने<span class="en-name">Mohit (Mohan)</span></div>
       <div class="parents">
@@ -357,7 +357,6 @@
     </div>
     <div class="vs">&amp;</div>
     <div class="family-card">
-      <svg class="pot-icon" viewBox="0 0 40 40"><path d="M12 16 h16 l-2 18 h-12 z" fill="none" stroke="#B8892F" stroke-width="1.4"/><ellipse cx="20" cy="16" rx="9" ry="2.4" fill="none" stroke="#B8892F" stroke-width="1.4"/><path d="M20 4 v10 M15 8 l5 6 5-6" fill="none" stroke="#7A1B2E" stroke-width="1.3"/></svg>
       <span class="role">वधू · The Bride</span>
       <div class="name">प्रांजल विसपुते<span class="en-name">Pranjal (Anuradha)</span></div>
       <div class="parents">
@@ -441,11 +440,20 @@
 </section>
 
 <footer>
-  <div class="fam en">॥ शुभमंगल सावधान ॥</div>
+  <div class="fam">॥ शुभमंगल सावधान ॥</div>
   <div class="hosts">
-    गं.भा. सत्यभामाबाई भिकारीशेठ दुसाने · श्री. नामदेव महादुशेठ दुसाने<br/>
-    समस्त दुसाने व विसपुते परिवार यांच्या वतीने सादर निमंत्रण
+    गं. भा. सत्यभामाबाई भिकारीशेठ दुसाने<br/>
+    सौ. भारती व श्री. गजानन भिकारीशेठ दुसाने<br/>
+    सौ. स्वाती व श्री. ज्ञानेश्वर भिकारीशेठ दुसाने<br/>
+    सौ. अर्चना व श्री. सोपान भिकारीशेठ दुसाने<br/>
+    सौ. कावेरी व श्री. विजय ज्ञानेश्वरशेठ दुसाने<br/>
+    कु. योगीता ज्ञानेश्वरशेठ दुसाने<br/>
+    कु. उपासना गजाननशेठ दुसाने<br/>
+    चि. उज्वल गजाननशेठ दुसाने<br/>
+    चि. मयंक सोपानशेठ दुसाने<br/>
+    <span class="family-highlight">समस्त दुसाने परिवार</span>
   </div>
+  <div class="hashtag"># राधामोहन</div>
   <div class="credit en">Mohit &amp; Pranjal · 24 July 2026</div>
 </footer>
 
